@@ -33,7 +33,7 @@ if ($metodo == "GET"){
 
     $comando = $pdo -> query($sql);
 
-    $produtos = $comando -> fetchALL(PDO::FETCH_ASSOC);
+    $chamados = $comando -> fetchALL(PDO::FETCH_ASSOC);
 
     echo json_encode($chamados);
 };
